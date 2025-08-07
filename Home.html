@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Student Portal</h2>
+      <nav>
+        <a href="#">Profile</a>
+        <a href="#">Courses</a>
+        <a href="#">Attendance</a>
+        <a href="#">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Dashboard</h1>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>GPA</h3>
+          <p>8.9</p>
+        </div>
+        <div class="card">
+          <h3>Attendance</h3>
+          <p>92%</p>
+        </div>
+        <div class="card">
+          <h3>Assignments</h3>
+          <p>12 Pending</p>
+        </div>
+        <div class="card">
+          <h3>Projects</h3>
+          <p>3 Active</p>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <h2>Recent Grades</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="gradeTable">
+            <!-- Data will be added by JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
