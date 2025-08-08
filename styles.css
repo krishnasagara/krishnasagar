@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.2s;
+}
+
+.sidebar nav a:hover {
+  color: #00aaff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #121212;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table-section {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.table-section h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #292929;
+}
+
+.status-passed {
+  color: #4caf50;
+}
+
+.status-improve {
+  color: #ffc107;
+}
